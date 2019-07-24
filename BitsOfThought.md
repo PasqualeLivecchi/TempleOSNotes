@@ -1,0 +1,3 @@
+Various notes about things I've observed that I'm not really sure what they mean yet.
+
+- `OptPass789A.HC` calls `ICFTemplateFun` with various arguments, one being `CMP_TEMPLATE_{x}`. For Tan this is `CMP_TEMPLATE_TAN` which is defined as `0x11`. Then there's ATan (`CMP_TEMPLATE_ATAN`) which is `0x12`. Cos (`CMP_TEMPLATE_COS`) is `0x10`. In `Templates.HC` there is a label for Tan named `@@110`, for Atan one named `@@120`, but for Cos the only thing that starts with 0x10 is `@@105`.. which makes me wonder if this is just coincidence on the first two. I really should go through the template function to figure out exactly what it does, but the code is massive.
